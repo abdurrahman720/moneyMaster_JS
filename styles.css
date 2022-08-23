@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff&family=Fira+Sans+Condensed&family=Heebo:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap");
+
+/* Top section start*/
+.top-title h1 {
+  color: #ff5e19;
+  font-family: "DynaPuff", cursive;
+  margin-top: 138px;
+  font-size: 50px;
+}
+.top-title p {
+  font-family: serif;
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+.bg-top {
+  background-color: black;
+  height: 481px;
+}
+.opacity-img img {
+  opacity: 0.2;
+  margin-top: 100px;
+  width: 100%;
+}
+.margin-title {
+  display: flex;
+  align-items: center;
+}
+.football {
+  opacity: 0.2;
+}
+/* Top section End */
+/* card section */
+.card-flex {
+  display: flex;
+}
+.bg-card {
+  background-color: black;
+}
+.button-background {
+  background-color: rgb(1, 81, 150);
+}
+/* Side bar list */
+.sidebar-list {
+  background: #000;
+  height: 310px;
+  margin-left: 15px;
+  border-radius: 8px;
+}
+
+.sidebar-list h6 {
+  display: inline;
+}
+.sidebar-height {
+  height: 400px;
+}
+/* footer */
+.text-footer {
+  font-size: 10px;
+}

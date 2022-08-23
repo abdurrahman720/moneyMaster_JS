@@ -5,12 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" > 
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body class="bg-dark">
+    <header class="bg-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-3 opacity-img">
+              <img src="images/aron.png" alt="">
+            </div>
+            <div class="col-6 text-center">
+              <div class="margin-title">
+                <div class="top-title">
+                  <h1 class="text-uppercase">Make Your Best Team</h1>
+                  <p class="">
+                    In this page you can make your best Cricket team. because we
+                    are offering you the best five foreing player from asia. so
+                    can take maximum five players from our draft. we are waiting
+                    to help you.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 text-end">
+              <img class="w-75 mt-5 football" src="images/bat.png">
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header End-->
+      <!--------- Card section start---------- -->
+      <main class="">
+        <section class="mt-5 container">
+          <div class="d-flex">
+            <div class="col-9">
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card text-center bg-card">
+                    <img class="w-100 rounded" src="images/messi.jpg" alt="...">
+                    <div class="card-body text-white bg-card rounded">
+                        <h5 id="lionel-messi" class="card-title">
+                            Lionel Messi
+                          </h5>
+                          <p class="card-text">30 Goal : 120 Assist</p>
+                      <button onclick="playeradd(this)" id="btn-mitchell-starc" class="w-75 button-background text-white rounded">
+                        SECLECT
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col h-100">
+                  <div class="card text-center bg-card h-100">
+                    <img class="w-100 rounded" src="images/neymar.jpg" alt="...">
+                    <div class="card-body text-white bg-card rounded">
+                        <h5 class="card-title">Neymar Jr</h5>
+                        <p class="card-text">30 Goal : 120 Assist</p>
+                      <button id="btn-david-warner" onclick="playeradd(this)" class="w-75 button-background text-white rounded">
+                        SECLECT
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center bg-card">
+                    <img class="w-100 rounded" src="images/ronaldo.jpg" alt="...">
+                    <div class="card-body text-white bg-card rounded">
+                        <h5 class="card-title">Cristiano Ronaldo</h5>
+                        <p class="card-text">30 Goal : 120 Assist</p>
+                      <button id="btn-steve-smith" onclick="playeradd(this)" class="w-75 button-background text-white rounded">
+                        SECLECT
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center bg-card">
+                    <img class="w-100 rounded" src="images/mbappe.jpg" alt="...">
+                    <div class="card-body text-white bg-card rounded">
+                        <h5 class="card-title">M Bappe</h5>
+                        <p class="card-text">30 Goal : 120 Assist</p>
+  
+                      <button id="btn-mitchell-jhonson" onclick="playeradd(this)" class="w-75 button-background text-white rounded">
+                        SECLECT
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center bg-card">
+                    <img class="w-100 rounded" src="images/emiliano.jpg" alt="...">
+                    <div class="card-body text-white bg-card rounded">
+                        <h5 class="card-title">Emiliano</h5>
+                        <p class="card-text">30 Goal : 120 Assist</p>
+                      <button id="btn-brate-lee" onclick="playeradd(this)" class="w-75 button-background text-white rounded">
+                        SECLECT
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card text-center bg-card">
+                    <img class="w-100 rounded" src="images/dmaria.jpg" alt="...">
+                    <div class="card-body text-white bg-card rounded">
+                      
+                        <h5 class="card-title">D Maria</h5>
+                        <p class="card-text">30 Goal : 120 Assist</p>
+                      <button id="btn-shane-warne" onclick="playeradd(this)" class="w-75 button-background text-white rounded">
+                        SECLECT
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--============= 
+              Sidebar start with best five
+              ========== -->
+            <div class="col-3">
+              <div class="sidebar-list">
+                <h4 class="text-white text-center sidebar-fst mt-2 p-2">
+                  Selected-V
+                </h4>
+                <div class="px-3">
+                  <table class="table table-borderless text-white">
+                    <tbody id="player-list">
+                      <!-- <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                      </tr> -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- =======
+                Budget Start
+                  ===== -->
+              <div class="sidebar-list mt-3 text-center sidebar-height">
+                <h4 class="text-white text-center sidebar-fst mt-2 p-2">
+                  Budget
+                </h4>
+                <h6 class="text-white">Per player</h6>
+                <input id="per-player-field" class="w-50 m-2" type="text">
+                <button id="btn-calculate" class="button-background text-white w-75 rounded-3 p-1 mt-2">
+                  Calculate
+                </button>
+                <p class="text-white mt-3">
+                  Player Expenses $<span id="player-expenses">00</span>
+                </p>
+                <h6 class="text-white">Manager</h6>
+                <input id="manager-field" class="w-50 m-2" type="text">
+                <div>
+                  <h6 class="text-white">Coach</h6>
+                  <input id="coach-field" class="w-50 m-2" type="text">
+                </div>
+                <button id="calculate-total" class="button-background text-white w-75 rounded-3 p-1 mt-2">
+                  Calculate Total
+                </button>
+                <h3 class="text-white fs-5 mt-3">
+                  Total $<span id="final-total">00</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <!--====== Side bar end==== -->
+        </section>
+        <div class="text-white p-3">
+          <hr>
+        </div>
+        <!-- footer star -->
+        <footer class="text-center p-3">
+          <h5 class="text-white text-footer text-center">
+            Copyright © 2022 All Rights Reserved
+          </h5>
+        </footer>
+      </main>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="js/functionCal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+
+
     
   </body>
 </html>
